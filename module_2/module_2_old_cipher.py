@@ -8,7 +8,7 @@ while True:
             if number % i1 == 0:
                 list_devider.append(i1)
                 continue
-        i_number = 0;
+        i_number = 0
         for i in range(1, int(number/2) + 1):
             j = 0
             while j < number:
@@ -19,7 +19,7 @@ while True:
                 if (i + j) == list_devider[i_number] and j >= i and i != j:
                    list_cipher.append(i)
                    list_cipher.append(j)
-                   i_number += 1;
+                   i_number += 1
                 if (j == number - 1):
                       i_number += 1
                       j = 1
