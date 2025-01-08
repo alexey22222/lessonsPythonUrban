@@ -29,10 +29,10 @@ class House:
         self.number_od_floors += value
         return House(self.name, self.number_od_floors)
     def __radd__(self, other):
-        self.number_od_floors += other
+        self.__add__(other)
         return House(self.name, self.number_od_floors)
     def __iadd__(self, other):
-        self.number_od_floors += other
+        self.__add__(other)
         return House(self.name, self.number_od_floors)
 
 
